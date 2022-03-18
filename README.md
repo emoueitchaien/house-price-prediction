@@ -2,7 +2,8 @@
 
 <pre>
 Project "House Price Prediction" using Linear Regression for Machine Learning
-In partial fulfillment of the requirements for the Bachelor’s Degree in Computer Science and Information Technology
+In partial fulfillment of the requirements for the Bachelor’s Degree in 
+Computer Science and Information Technology
 
 
 Under the supervision of Dr. Binod Kumar Adhikari
