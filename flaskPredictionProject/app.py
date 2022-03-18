@@ -28,7 +28,7 @@ def predict():
 
     locale.setlocale(locale.LC_MONETARY, 'en_IN')
     inputs = pd.DataFrame([[location, sqft, bath, bhk]], columns=['location', 'total_sqft', 'bath', 'bhk'])
-    prediction = str(locale.currency(round(pipe.predict(inputs)[0] * 1e5, 2), grouping=True)).replace("₹ ", "")
+    prediction = str(locale.currency(round(pipe.predict(inputs)[0] * 1e5, 2), grouping=True)).replace("₹", "")
 
     return prediction
 
