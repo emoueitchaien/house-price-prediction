@@ -8,7 +8,7 @@ import locale
 app = Flask(__name__)
 
 data = pd.read_csv("final_cleaned_data.csv")
-pipe = pickle.load(open('ridge_model.pkl', 'rb'))
+pipe = pickle.load(open('linear_model.pkl', 'rb'))
 
 
 @app.route('/')
