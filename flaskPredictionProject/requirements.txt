@@ -4,7 +4,7 @@ click==8.0.4
 colorama==0.4.4
 cycler==0.11.0
 docopt==0.6.2
-Flask==2.0.3
+Flask==2.3.2
 fonttools==4.30.0
 gunicorn==20.1.0
 idna==3.3
