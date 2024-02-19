@@ -3,7 +3,6 @@
 from flask import Flask, render_template, request
 import pandas as pd
 import pickle
-import locale
 
 app = Flask(__name__)
 
@@ -26,9 +25,9 @@ def predict():
 
     # print(location, bhk, bath, sqft)
 
-    locale.setlocale(locale.LC_MONETARY, 'en_IN')
     inputs = pd.DataFrame([[location, sqft, bath, bhk]], columns=['location', 'total_sqft', 'bath', 'bhk'])
-    prediction = str(locale.currency(round(pipe.predict(inputs)[0] * 1e5, 2), grouping=True)).replace("₹", "")
+    prediction = str(round(pipe.predict(inputs)[0] * 1e5, 2))
+
 
     return prediction
 
